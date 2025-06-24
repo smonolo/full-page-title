@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "FullPageTitle",
+  "version": "1.0",
+  "description": "Display the full title of the current page.",
+  "permissions": ["scripting", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "FullPageTitle"
+  },
+  "host_permissions": ["<all_urls>"]
+}
