@@ -8,7 +8,9 @@
   "description": "Display current page's full title.",
   "scripts": {
     "format": "prettier --write .",
-    "build": "tsc"
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css",
+    "build:code": "tsc",
+    "build": "npm run build:css && npm run build:code"
   },
   "homepage": "https://github.com/smonolo/full-page-title#readme",
   "bugs": {
@@ -23,5 +25,9 @@
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.13",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
   }
 }
